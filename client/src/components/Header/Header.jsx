@@ -5,6 +5,7 @@ import styles from './Header.module.sass';
 import CONSTANTS from '../../constants';
 import { clearUserStore } from '../../store/slices/userSlice';
 import { getUser } from '../../store/slices/userSlice';
+import Logo from '../../components/Logo';
 
 class Header extends React.Component {
   componentDidMount () {
@@ -121,11 +122,7 @@ class Header extends React.Component {
           </div>
         </div>
         <div className={styles.navContainer}>
-          <img
-            src={`${CONSTANTS.STATIC_IMAGES_PATH}blue-logo.png`}
-            className={styles.logo}
-            alt='blue_logo'
-          />
+          <Logo alt='logo' />
           <div className={styles.leftNav}>
             <div className={styles.nav}>
               <ul>
