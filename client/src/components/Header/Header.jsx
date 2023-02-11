@@ -113,7 +113,7 @@ class Header extends React.Component {
                 src={`${CONSTANTS.STATIC_IMAGES_PATH}phone.png`}
                 alt='phone'
               />
-              <span>(877)&nbsp;355-3585</span>
+              <span>{CONSTANTS.COMPANY_PHONE_NUMBER}</span>
             </a>
           </div>
           <div className={styles.userButtonsContainer}>
